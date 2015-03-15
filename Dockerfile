@@ -21,6 +21,8 @@ VOLUME /blackhole
 
 # copy across the defaults file
 ADD Assets/couchpotato-defaults /etc/default/couchpotato
+# copy across the default config.ini
+ADD Assets/config.ini /tmp/config.ini
 
 # Setup the config for container startup
 RUN mkdir -p /etc/my_init.d

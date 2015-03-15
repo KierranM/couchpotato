@@ -8,6 +8,8 @@ This sets up a couch potato server running on port 5050. It is preconfigured to 
  * ```/downloads``` -> Where your torrent software places completed downloads
  * ```/blackhole``` -> Where your torrent software watches for .torrent files
 
+ By default the WebUI has a login of ```couchpotato-user``` with the password ```couchpotato-password```,
+ but I highly recommend changing these using the environment variables seen in the command below
 
 #Installation
 
