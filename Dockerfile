@@ -13,6 +13,7 @@ EXPOSE 5050
 
 # set up the mount points
 VOLUME /config
+VOLUME /downloads
 VOLUME /movies
 VOLUME /blackhole
 
