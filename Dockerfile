@@ -3,7 +3,9 @@ MAINTAINER Kierran McPherson <kierranm@gmail.com>
 ENV DEBIAN_FRONTEND noninteractive
 
 # install git
-RUN apt-get update && apt-get install -y git-core
+RUN apt-get update && apt-get install -y \
+  git-core \
+  python
 
 # clone the git repo into the /couchpotato directory
 RUN git clone https://github.com/RuudBurger/CouchPotatoServer.git /couchpotato
