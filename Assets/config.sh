@@ -5,7 +5,7 @@ cd /couchpotato
 # update couchpotato
 git pull
 
-CONFIG="/config"
+CONFIG="/couchpotato-data/config"
 
  # first time run copy config
 if [[ ! -f $CONFIG/config.ini ]]; then

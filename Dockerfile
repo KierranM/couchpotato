@@ -13,11 +13,8 @@ RUN git clone https://github.com/RuudBurger/CouchPotatoServer.git /couchpotato
 # expose the couch potato port
 EXPOSE 5050
 
-# set up the mount points
-VOLUME /config
-VOLUME /downloads
-VOLUME /movies
-VOLUME /blackhole
+# set up the mount point for external data
+VOLUME /couchpotato-data
 
 # copy across the defaults file
 ADD Assets/couchpotato-defaults /etc/default/couchpotato
